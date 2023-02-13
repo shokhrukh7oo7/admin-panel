@@ -1,0 +1,469 @@
+@import url(./common.css);
+
+:root {
+  --aside-width: 250px;
+  --header-width: 60px;
+}
+
+#navbar-close {
+  display: none;
+  width: 40px;
+  height: 40px;
+}
+
+#navbar-responsive {
+  display: block;
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+}
+
+.aside-content p {
+  color: #869ab8;
+}
+
+.aside-content {
+  background-color: #f9fbfd;
+  padding: 5px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.8s;
+  border-radius: 0.625rem;
+}
+
+.aside-content:hover {
+  background-color: #d9e2ef;
+}
+
+.aside-content i {
+  color: #869ab8;
+}
+
+.aside-content p:hover {
+  color: #315fe9;
+}
+
+aside {
+  position: fixed;
+  top: 80px;
+  width: 250px;
+  background-color: white;
+  height: 100vh;
+  padding-bottom: 80px;
+}
+
+aside {
+  overflow-x: scroll;
+}
+
+aside::-webkit-scrollbar {
+  width: 8px;
+}
+
+aside::-webkit-scrollbar-thumb {
+  background-color: rgb(134, 154, 184);
+}
+
+aside::-webkit-scrollbar-track {
+  background-color: #cccccc;
+}
+
+.aside {
+  background-color: #315fe9;
+  width: 250px;
+  height: 80px;
+  display: flex;
+  padding: 0 0 0 20px;
+  justify-content: start;
+  align-items: center;
+}
+
+.aside a {
+  font-size: 24px;
+  color: #f9fbfd;
+  text-decoration: none;
+}
+
+.aside-row {
+  display: flex;
+  align-items: center;
+}
+
+.nav-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+header {
+  display: flex;
+  left: 0;
+  top: 0;
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  background-color: #f9fbfd;
+  z-index: 2;
+}
+
+.header__row-left {
+  padding: 0 20px;
+}
+
+.header__row-left i {
+  color: #869ab8;
+}
+
+.header__row-left a {
+  size: 50px 50px;
+}
+
+.header__row-left i:hover {
+  color: #315fe9;
+}
+
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.header__row-right {
+  padding: 0 20px;
+}
+
+.header__row-right-btn1 {
+  margin: 0 10px 0 0;
+  padding: 10px 100px 10px 15px;
+  border-radius: 0.3rem;
+  font-weight: 700;
+  border: 1px solid #869ab8;
+  color: #869ab8;
+  background-color: -internal-light-dark
+    (rgb(118, 118, 118), rgb(133, 133, 133));
+}
+
+.header__row-right-btn2 {
+  border-radius: 0.3rem;
+  font-weight: 700;
+  padding: 10px 20px;
+  border: 1px solid #315fe9;
+  color: #315fe9;
+  background-color: transparent;
+  transition: 0.5s;
+}
+
+.header__row-right-btn2:hover {
+  background-color: #aaafb8;
+}
+
+main {
+  left: 0;
+  width: calc(100vw - var(--aside-width));
+}
+
+main {
+  position: relative;
+  top: var(--header-width);
+  padding: 20px;
+  height: calc(100vh - var(--header-width));
+  background-color: #fff;
+  overflow: auto;
+}
+
+main::-webkit-scrollbar {
+  width: 8px;
+}
+
+main::-webkit-scrollbar-thumb {
+  background-color: rgb(134, 154, 184);
+}
+
+main::-webkit-scrollbar-track {
+  background-color: #cccccc;
+}
+
+.nav-link {
+  width: 100%;
+  height: 100%;
+  color: #869ab8;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f9fbfd;
+  border-radius: 0.625rem;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.nav-item {
+  display: flex;
+}
+
+/* start  style */
+
+/**/
+.img-1 {
+  padding: 20px;
+  margin-top: 10px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  transition: 0.2s;
+  cursor: pointer;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(
+      to left bottom,
+      rgba(255, 1, 10, 0),
+      rgb(12, 26, 63)
+    ),
+    url(https://prium.github.io/grid/assets/img/group/pic-1.png);
+}
+
+.img-1:hover {
+  background-size: 110%;
+}
+
+.trent {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trent i {
+  color: white;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.trent button {
+  background-color: rgb(10, 111, 77);
+  border: none;
+  padding: 5px 40px;
+  margin-top: 10px;
+  border-radius: 30px 0 30px 0;
+  color: white;
+  transition: 0.4s;
+}
+
+.trent button:hover {
+  transform: scale(0.9);
+}
+p {
+  color: aliceblue;
+  font-size: 20px;
+}
+
+.img2 {
+  background-image: linear-gradient(
+      to left bottom,
+      rgba(255, 1, 10, 0),
+      rgb(12, 26, 63)
+    ),
+    url(https://prium.github.io/grid/assets/img/group/pic-2.png);
+}
+
+.img3 {
+  background-image: linear-gradient(
+      to left bottom,
+      rgba(255, 1, 10, 0),
+      rgb(12, 26, 63)
+    ),
+    url(https://prium.github.io/grid/assets/img/group/pic-3.png);
+}
+
+.img4 {
+  background-image: linear-gradient(
+      to left bottom,
+      rgba(255, 1, 10, 0),
+      rgb(12, 26, 63)
+    ),
+    url(https://prium.github.io/grid/assets/img/group/pic-4.png);
+}
+
+.img5 {
+  background-image: linear-gradient(
+      to left bottom,
+      rgba(255, 1, 10, 0),
+      rgb(12, 26, 63)
+    ),
+    url(https://prium.github.io/grid/assets/img/group/pic-6.png);
+}
+
+.img6 {
+  background-image: linear-gradient(
+      to left bottom,
+      rgba(255, 1, 10, 0),
+      rgb(12, 26, 63)
+    ),
+    url(https://prium.github.io/grid/assets/img/group/pic-7.png);
+}
+
+.img7 {
+  background-image: linear-gradient(
+      to left bottom,
+      rgba(255, 1, 10, 0),
+      rgb(12, 26, 63)
+    ),
+    url(https://prium.github.io/grid/assets/img/group/pic-8.png);
+}
+
+.img8 {
+  background-image: linear-gradient(
+      to left bottom,
+      rgba(255, 1, 10, 0),
+      rgb(12, 26, 63)
+    ),
+    url(https://prium.github.io/grid/assets/img/group/pic-9.jpg);
+}
+
+.img9 {
+  background-image: linear-gradient(
+      to left bottom,
+      rgba(255, 1, 10, 0),
+      rgb(12, 26, 63)
+    ),
+    url(https://prium.github.io/grid/assets/img/group/pic-16.jpg);
+}
+
+.img10 {
+  background-image: linear-gradient(
+      to left bottom,
+      rgba(255, 1, 10, 0),
+      rgb(12, 26, 63)
+    ),
+    url(https://prium.github.io/grid/assets/img/group/pic-17.jpg);
+}
+
+.img13 {
+  background-image: linear-gradient(
+      to left bottom,
+      rgba(255, 1, 10, 0),
+      rgb(12, 26, 63)
+    ),
+    url(https://prium.github.io/grid/assets/img/group/pic-17.jpg);
+}
+
+.img11 {
+  background-image: linear-gradient(
+      to left bottom,
+      rgba(255, 1, 10, 0),
+      rgb(12, 26, 63)
+    ),
+    url(https://prium.github.io/grid/assets/img/group/pic-19.png);
+}
+
+.img12 {
+  background-image: linear-gradient(
+      to left bottom,
+      rgba(255, 1, 10, 0),
+      rgb(12, 26, 63)
+    ),
+    url(https://prium.github.io/grid/assets/img/group/pic-20.png);
+}
+
+.color1 {
+  color: black !important;
+}
+
+#navbar-open {
+  display: none;
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: transparent;
+}
+
+#navbar-responsive {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  #navbar-open {
+    display: block;
+  }
+  .header__row-right {
+    display: none;
+  }
+  .header__row-left {
+    display: none;
+  }
+
+  .aside {
+    display: none;
+  }
+
+  aside {
+    right: -250px;
+  }
+  #navbar-responsive {
+    transition: 0.8s;
+    position: fixed;
+    top: -100px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    border: 1px solid aqua;
+    background-color: blue;
+    z-index: 1;
+    overflow-y: scroll;
+    display: block;
+  }
+
+  #navbar-responsive .nav-res {
+    width: 100%;
+    height: 15vh;
+  }
+
+  #navbar-close {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border: none;
+    /* background-color: transparent; */
+  }
+}
+
+@media (min-width: 300px) {
+  aside {
+    width: var(--aside-width);
+  }
+  main {
+    width: 80%;
+  }
+}
+
+@media (min-width: 702px) {
+  aside {
+    width: var(--aside-width);
+  }
+
+  main {
+    left: 250px;
+    height: 100vh;
+  }
+}
+
+/**/
